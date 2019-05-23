@@ -124,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="215" />
     <option name="y" value="127" />
     <option name="width" value="887" />
@@ -404,12 +404,12 @@
       <workItem from="1558598692928" duration="693000" />
       <workItem from="1558601566532" duration="1443000" />
       <workItem from="1558614358948" duration="3018000" />
-      <workItem from="1558621354995" duration="273000" />
+      <workItem from="1558621354995" duration="786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104471000" />
+    <option name="totallyTimeSpent" value="104984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
