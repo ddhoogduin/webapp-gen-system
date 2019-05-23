@@ -1,6 +1,6 @@
 # webapp-gen-system
 
-Web-application generator system; system for rapidly creating web-based applications in a semi-automatic matter through the generic system outlay. This system is, at first, only intended for the development of bio-informatics related applications. The computation or algorithm can be integrated in the application by 'linking' the web-application with a external API. 
+Web-application generator system; system for rapidly creating web-based applications in a semi-automatic matter through the generic system outlay. This system is, at first, only intended for the development of bio-informatics related applications. A computation or algorithm can be integrated in the application by 'linking' the web-application with a external API. 
 
 ## Version
 
