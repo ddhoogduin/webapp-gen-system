@@ -4,7 +4,7 @@
 Web-application generator system; system for rapidly creating web-based applications in a semi-automatic matter through the generic system outlay. This system is, at first, only intended for the development of bio-informatics related applications. A computation or algorithm can be integrated in the application by 'linking' the web-application with a external API. At first, **the system is only intended for linux envirioments**.  
 
 ## Version description
-This version is mainly driven by the use of the Directus API and CMS environment. All back-end functionalities are facilitated by the Directus application. The attached test-cases do consist of a web-application for the KeyGenes algorithm and a general format setup (wg-template). Currently it is only possible to make use of a direct API algorithm. The next version  of the system will support the use of Galaxy API.
+This version is mainly driven by the use of the Directus API and CMS environment. All back-end functionalities are facilitated by the Directus application. The attached test-cases do consist of a web-application for the KeyGenes algorithm and a general format setup (wg-app-template). Currently it is only possible to make use of a direct API algorithm. The next version  of the system will support the use of Galaxy API.
 
 ## System description
 
@@ -69,7 +69,7 @@ https://localhost/webapp-gen-system/directus/public/admin
 
 #### Configure the front-end
 
-Follow the installation instructions of the wg-front-end. When completed, link the front-end to the Directus API endpoint by use of the config script. 
+Follow the installation instructions of the template. When completed, link the front-end to the Directus API endpoint by use of the config script. 
 
 ```
 $ bash template/config/set-wg.sh
