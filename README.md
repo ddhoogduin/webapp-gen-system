@@ -80,7 +80,8 @@ The default user credentials are:
 Follow [the installation instructions of the template](https://github.com/ddhoogduin/wg-app-template). When completed, link the front-end to the Directus API endpoint by use of the config script. 
 
 ```
-$ bash template/config/set-wg.sh
+$ cd template/config
+$ bash set-wg.sh
 ```
 The follow inputs are required:
 - Project name 
