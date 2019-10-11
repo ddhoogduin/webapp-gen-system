@@ -42,7 +42,7 @@ $ sudo chmod -R 777 ./directus
 Transfer the wished data-template migration to an empty MySQL-database (located in ./data-templates).
 
 
-**Directus manager**
+#### Directus manager
 
 Follow the installation instructions of the directus manager. When completed, the directus manager script can be executed.
 ```sh
