@@ -34,7 +34,7 @@ The wg-template is based on ReactJS and so requires [the installation of NodeJS]
 ### Installing & executing 
 Clone repository to Apache folder (/var/www/ or /var/www/html) and initialize the submodules.
 ```sh
-$ git clone --single-branch --branch prototype-1.0 prototype-1.0 
+$ git clone --single-branch --branch prototype-1.0 prototype-1.0 https://github.com/ddhoogduin/webapp-gen-system.git
 $ git submodule update --init --recursive
 ```
 It may be required to give permissions to the directus folder.
