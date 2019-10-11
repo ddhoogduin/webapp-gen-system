@@ -69,9 +69,9 @@ http://localhost/webapp-gen-system/directus/public/admin
 ```
 The default user credentials are:
 
-username: admin@example.com
+***username***: admin@example.com
 
-password: password
+***password***: password
 
 **strongly recommend to change directly**
 
@@ -84,7 +84,7 @@ $ bash template/config/set-wg.sh
 ```
 The follow inputs are required:
 - Project name 
-- Directus project url (https://localhost/webapp-gen-system/directus/public/<PROJECT_NAME>)
+- Directus project url (http://localhost/webapp-gen-system/directus/public/<PROJECT_NAME>)
 
 When the project is successfully connected it can be launched as test server:
 ```sh
