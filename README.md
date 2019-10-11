@@ -43,6 +43,7 @@ Transfer the wished data-template migration to an empty MySQL-database (located 
 
 
 **Directus manager**
+
 Follow the installation instructions of the directus manager. When completed, the directus manager script can be executed.
 ```sh
 $ python3 directus-manager/Command.py
@@ -56,6 +57,7 @@ Initialize the directus environment by following the configration steps. The fol
 Within the directus envirionment menu select the option to **link a project to database**. This will generate a configuration file for a new directus project but uses an existing database instead of creating a new one. Choose a suitable name for the project. 
 
 **Accessing Directus suite**
+
 At this point the project can be accesed by browser following the default [Directus procedures](https://docs.directus.io/getting-started/installation.html#configure).
 
 Without further document root configuration the link to back-end looks like: 
@@ -64,6 +66,7 @@ https://localhost/webapp-gen-system/directus/public/admin
 ```
 
 **Configure the front-end**
+
 Follow the installation instructions of the wg-front-end. When completed, link the front-end to the Directus API endpoint by use of the config script. 
 
 ```
