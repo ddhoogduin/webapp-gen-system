@@ -90,6 +90,7 @@ The follow inputs are required:
 When the project is successfully connected it can be launched as test server:
 ```sh
 cd template 
+npm install
 npm start
 ```
 Or as production build: https://create-react-app.dev/docs/production-build
