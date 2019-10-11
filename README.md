@@ -29,6 +29,8 @@ The Directus suite requires a [LAMP stack](https://www.digitalocean.com/communit
 ___Make sure [mod_rewrite is enabled](https://hostadvice.com/how-to/how-to-enable-apache-mod_rewrite-on-an-ubuntu-18-04-vps-or-dedicated-server/) in the Apache configuration.___ 
 
 In order to make use of the Directus manager it is required that version of Python 3.6+ is installed. 
+The wg-template is based on ReactJS and so requires [the installation of NodeJS](https://tecadmin.net/install-latest-nodejs-npm-on-ubuntu/) 
+
 ### Installing & executing 
 Clone repository to Apache folder (/var/www/ or /var/www/html) and initialize the submodules.
 ```sh
