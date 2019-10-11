@@ -65,7 +65,7 @@ At this point the project can be accesed by browser following the default [Direc
 
 Without further document root configuration the link to back-end looks like: 
 ```
-https://localhost/webapp-gen-system/directus/public/admin 
+http://localhost/webapp-gen-system/directus/public/admin 
 ```
 
 #### Configure the front-end
