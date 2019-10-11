@@ -67,6 +67,12 @@ Without further document root configuration the link to back-end looks like:
 ```
 http://localhost/webapp-gen-system/directus/public/admin 
 ```
+The default user credentials are:
+
+username: admin@example.com
+password: password
+
+**strongly recommend to change directly**
 
 #### Configure the front-end
 
