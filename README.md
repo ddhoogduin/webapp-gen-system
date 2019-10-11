@@ -46,7 +46,7 @@ Transfer the wished data-template migration to an empty MySQL-database (located 
 
 #### Directus manager
 
-Follow the installation instructions of the directus manager. When completed, the directus manager script can be executed.
+Install the package requirements. When completed, the directus manager script can be executed.
 ```sh
 $ python3 directus-manager/Command.py
 ```
@@ -69,7 +69,7 @@ https://localhost/webapp-gen-system/directus/public/admin
 
 #### Configure the front-end
 
-Follow the installation instructions of the template. When completed, link the front-end to the Directus API endpoint by use of the config script. 
+Follow [the installation instructions of the template](https://github.com/ddhoogduin/wg-app-template). When completed, link the front-end to the Directus API endpoint by use of the config script. 
 
 ```
 $ bash template/config/set-wg.sh
