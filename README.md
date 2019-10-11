@@ -70,6 +70,7 @@ http://localhost/webapp-gen-system/directus/public/admin
 The default user credentials are:
 
 username: admin@example.com
+
 password: password
 
 **strongly recommend to change directly**
