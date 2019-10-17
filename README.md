@@ -1,10 +1,10 @@
 # Webapp-gen-system - prototype 1.0
 
 ## About
-Web-application generator system; system for rapidly creating web-based applications in a semi-automatic matter through the generic system outlay. This system is, at first, only intended for the development of bio-informatics related applications. A computation or algorithm can be integrated in the application by 'linking' the web-application with a external API. At first, **the system is only intended for linux envirioments**.  
+Web-application generator system; system for rapidly creating web-based applications in a semi-automatic matter through the generic system outlay. This system is, at first, only intended for the development of bio-informatics related applications. A computation or algorithm can be integrated in the application by 'linking' the web-application with a external API. At first, **the system is only intended for linux environments**. 
 
 ## Version description
-This version is mainly driven by the use of the Directus API and CMS environment. All back-end functionalities are facilitated by the Directus application. The attached test-cases do consist of a web-application for the KeyGenes algorithm and a general format setup (wg-template). Currently it is only possible to make use of a direct API algorithm. The next version  of the system will support the use of Galaxy API.
+This version is mainly driven by the use of the Directus API and CMS environment. All back-end functionalities are facilitated by the Directus application. A general template is provided (wg-app-template). Currently it is only possible to make use of a direct API algorithm. The next version  of the system will support the use of Galaxy API.
 
 ## System description
 
@@ -34,7 +34,7 @@ The wg-template is based on ReactJS and so requires [the installation of NodeJS]
 ### Installing & executing 
 Clone repository to Apache folder (/var/www/ or /var/www/html) and initialize the submodules.
 ```sh
-$ git clone --single-branch --branch prototype-1.0 prototype-1.0 
+$ git clone --single-branch --branch prototype-1.0 https://github.com/ddhoogduin/webapp-gen-system.git
 $ git submodule update --init --recursive
 ```
 It may be required to give permissions to the directus folder.
@@ -46,9 +46,10 @@ Transfer the wished data-template migration to an empty MySQL-database (located 
 
 #### Directus manager
 
-Follow the installation instructions of the directus manager. When completed, the directus manager script can be executed.
+Install the package requirements. When completed, the directus manager script can be executed.
 ```sh
-$ python3 directus-manager/Command.py
+$ cd directus-manager
+$ python3 Command.py
 ```
 Initialize the directus environment by following the configration steps. The following inputs are required:
 
@@ -64,23 +65,32 @@ At this point the project can be accesed by browser following the default [Direc
 
 Without further document root configuration the link to back-end looks like: 
 ```
-https://localhost/webapp-gen-system/directus/public/admin 
+http://localhost/webapp-gen-system/directus/public/admin 
 ```
+The default user credentials are:
+
+***username***: admin@example.com
+
+***password***: password
+
+**strongly recommend to change directly**
 
 #### Configure the front-end
 
-Follow the installation instructions of the wg-front-end. When completed, link the front-end to the Directus API endpoint by use of the config script. 
+Follow [the installation instructions of the template](https://github.com/ddhoogduin/wg-app-template). When completed, link the front-end to the Directus API endpoint by use of the config script. 
 
 ```
-$ bash template/config/set-wg.sh
+$ cd template/config
+$ bash set-wg.sh
 ```
 The follow inputs are required:
 - Project name 
-- Directus project url (https://localhost/webapp-gen-system/directus/public/<PROJECT_NAME>)
+- Directus project url (http://localhost/webapp-gen-system/directus/public/<PROJECT_NAME>/)
 
 When the project is successfully connected it can be launched as test server:
 ```sh
 cd template 
+npm install
 npm start
 ```
 Or as production build: https://create-react-app.dev/docs/production-build
