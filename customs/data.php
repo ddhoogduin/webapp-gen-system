@@ -20,25 +20,18 @@ return [
             $tableGateway = new \Zend\Db\TableGateway\TableGateway('directus_users', $dbConnection);
 
             $select = new \Zend\Db\Sql\Select();
-            $select->columns(array('counts'=>new Expression('AVG(count)')));
-            $select->from('transcript');
-            $select->join(
-                'gene',
-                'gene = gene.id',
-                array('ensg', 'symbol', 'description', 'gene_id'=>'id'),
-                $select::JOIN_LEFT
-            );
+            $select->from('transcript_mv');
             $select->where('tissue',$tissueID);
-            $select->group('gene');
-            $select->order('counts DESC');
+            $select->order('count_avg DESC');
             $select->limit($amount);
             $genes = $tableGateway->selectWith($select);
             $geneIds = array();
             $genes = $genes->toArray();
             foreach ($genes as $key => $value){
-                array_push($geneIds, $value['gene_id']);
+                array_push($geneIds, $value['gene']);
             }
             $select = new \Zend\Db\Sql\Select('transcript');
+            $select->columns(array('tissue', 'gene', 'stage', 'count'));
             $select->where->in('gene', $geneIds);
             $result = $tableGateway->selectWith($select);
             $counts = $result->toArray();
